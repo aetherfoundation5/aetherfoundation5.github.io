@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokémon GO Web Store</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>  
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="https://aetherfoundation5.github.io/image/logo.png" alt="Logo">
+            </div>
+
+            <div class="nav-links">
+                <a href="./index.html">Home</a>
+                <a href="./pages/store/index.html">Store</a>
+                <a href="">Seasons</a>
+                <a href="">Events</a>
+                <a href="">Community Day</a>        
+                <a href="">Leaderboard</a>
+            </div>
+            <a href="./pages/profile/index.html" class="profile-link">
+                <img src="https://aetherfoundation5.github.io/image/profile-icon.png" alt="Profile">
+                <span>Profile</span>
+            </a>
+        </nav>
+    </header>
+    <!-- Secondary Navigation -->
+    <nav class="secondary-nav">
+        <a href="#featured" class="active" id="featured-link">Featured</a>
+        <a href="#item-boxes" id="item-boxes-link">Item Boxes</a>
+        <a href="#pokecoins" id="pokecoins-link">PokéCoins</a>
+        <a href="#daily-bundles" id="daily-bundles-link">Daily Bundles</a>
+    </nav>
+    
+    <section class="hero">
+        <div class="hero-content">
+            <div class ="one-time">ONE TIME ONLY</div>
+            <h1 class="hero-title">Power Up Ticket Ultra Ticket Box</h1>
+            <img src="https://store.pokemongolive.com/_next/image?url=https%3A%2F%2Fstorage.googleapis.com%2Fplatform-webstore-stg-assets%2Fpgo%2Fsku_assets%2Fbundle.general.adventure.1.png&w=384&q=75" alt="Gift Box" class="gift-box">
+            <div class="item-icons">
+                <div class="item-icon">
+                    <img src="https://store.pokemongolive.com/_next/image?url=https%3A%2F%2Fstorage.googleapis.com%2Fplatform-webstore-rel-assets%2Fpgo%2Fsku_assets%2Fitem_event_ticket_07.png&w=96&q=75" alt="Item"width="50" height="50">
+                    <span class="item-count">1</span>
+                </div>
+                <div class="item-icon">
+                    <img src="https://store.pokemongolive.com/_next/image?url=https%3A%2F%2Fstorage.googleapis.com%2Fplatform-webstore-rel-assets%2Fpgo%2Fsku_assets%2Fitem_event_ticket_07.png&w=96&q=75" alt="Item"width="50" height="50">
+                    <span class="item-count">1</span>
+                </div>
+                <div class="item-icon">
+                    <img src="https://store.pokemongolive.com/_next/image?url=https%3A%2F%2Fstorage.googleapis.com%2Fplatform-webstore-rel-assets%2Fpgo%2Fsite_assets%2Fvirtual-currency.png&w=96&q=75" alt="Item"width="50" height="50">
+                    <span class="item-count">100</span>
+                </div>
+            </div>
+            <p class="item-description">Can only be purchased 1 time.</p>
+            <button class="price-btn">₱289.00</button>
+        </div>
+        
+        <div class="carousel-container">
+            <div class="carousel-slides">
+                <div class="carousel-slide active"><img src="https://lh3.googleusercontent.com/JQNUJgXLbOBrA8oXF3hk4qesyBJXXHsajm1S3KJC3bfHHve62AsjZD4mX3n3d3_39bo048CZsFSUiPKRgrxr5csZWqNYRFewxQgMiTDGU1rahg=e365-w1728" alt="Slide 1"></div>
+                <div class="carousel-slide"><img src="https://lh3.googleusercontent.com/5-wtH1UfoTo5J3tb1JKtQAaoWUpxfDHtYd0ERtpZqeMa_ZZxXi_UufjDorrNvG2BJSk1KITd4vgbXwcsMMu8qHLKlgUZjQ05WXaYhHOr62IrpCU=w1440-e365" alt="Slide 2"></div>
+                <div class="carousel-slide"><img src="https://lh3.googleusercontent.com/KIWi6LwginNR6Ny2EgHwfHAWVidgQjONChIhQYw69es-ulR5KrbihhjeYVWo7BJnUSGLF6pNrsch4ibp-dIeSrEwBjE9Aqy3otOl2Hb5-dWW=w1440-e365" alt="Slide 3"></div>
+                <div class="carousel-slide"><img src="https://lh3.googleusercontent.com/7GYjwcQtsfY0LgcKujJjdez13TI8tPeca2c_RkP3wK6h6PuWs_-tRtCWOARTk743cFJKVVhPaVmkHIe-jrdWfsBsP1JQV0xpyNAGobNG5kML0w=w1440-e365" alt="Slide 4"></div>
+            </div>
+    
+            <div class="carousel-arrows">
+                <span class="arrow prev" onclick="changeSlide(-1)">&#10094;</span>
+                <div class="carousel-dots">
+                    <div class="dot active" onclick="setSlide(0)"></div>
+                    <div class="dot" onclick="setSlide(1)"></div>
+                    <div class="dot" onclick="setSlide(2)"></div>
+                    <div class="dot" onclick="setSlide(3)"></div>
+                </div>
+                <span class="arrow next" onclick="changeSlide(1)">&#10095;</span>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Featured Section -->
+    <section id="featured">
+        <h2 class="section-title">Featured</h2>
+        <div class="featured-section">
+            <div class="featured-tag">FEATURED</div>
+            <div class="featured-content">
+                <div class="featured-info">
+                    <h2 class="featured-title">Pokémon GO Fest 2025: Global Ticket</h2>
+                    <p class="item-description">Can only be purchased 1 time.</p>
+                    <button class="price-btn">₱439.00</button>
+                </div>
+                <div class="featured-image">
+                    <img src="https://store.pokemongolive.com/_next/image?url=https%3A%2F%2Fstorage.googleapis.com%2Fplatform-webstore-dev-assets%2Fpgo%2Fsku_assets%2Fweb-boost-box-1223.png&w=384&q=75" alt="Gift Box">
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Item Boxes Section -->
+    <section id="item-boxes">
+        <h2 class="section-title">Item Boxes</h2>
+        <div class="item-boxes">
+            <!-- Box 1 -->
+            <div class="item-card">
+                <div class="timer-bar">17 HOURS LEFT</div>
+                <div class="item-content">
+                    <div class="item-tag">ONE TIME ONLY</div>
+                    <img src="https://store.pokemongolive.com/_next/image?url=https%3A%2F%2Fstorage.googleapis.com%2Fplatform-webstore-rel-assets%2Fpgo%2Fsku_assets%2Fbundle.general1.large.1.png&w=256&q=75" alt="Gift Box"width="100" height="100">
+                    <div class="item-icons">
+                        <div class="item-icon">
+                            <img src="https://store.pokemongolive.com/_next/image?url=https%3A%2F%2Fstorage.googleapis.com%2Fplatform-webstore-rel-assets%2Fpgo%2Fsku_assets%2Fitem_evergreen_ticket.png&w=96&q=75" alt="Item" width="50" height="50">
+                            <span class="item-count">1</span>
+                        </div>
+                        <div class="item-icon">
+                            <img src="https://store.pokemongolive.com/_next/image?url=https%3A%2F%2Fstorage.googleapis.com%2Fplatform-webstore-rel-assets%2Fpgo%2Fsku_assets%2Fitem_rare_candy.png&w=96&q=75" alt="Item"width="50" height="50">
+                            <span class="item-count">2</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="item-info">
+                    <h3 class="item-name">Bug Out Ultra Ticket Box</h3>
+                    <p class="item-description">Can only be purchased 1 time.</p>
+                </div>
+                <div class="item-price">
+                    <button class="price-btn" data-product-id="product1">₱59.00</button>
+                </div>
+            </div>
+            
+            <!-- Box 2 -->
+            <div class="item-card">
+                <div class="item-content">
+                    <div class="item-tag">ONE TIME ONLY</div>
+                    <img src="https://store.pokemongolive.com/_next/image?url=https%3A%2F%2Fstorage.googleapis.com%2Fplatform-webstore-stg-assets%2Fpgo%2Fsku_assets%2Fbundle.general.adventure.1.png&w=256&q=75" alt="Gift Box"width="100" height="100">
+                    <div class="item-icons">
+                        <div class="item-icon">
+                            <img src="https://store.pokemongolive.com/_next/image?url=https%3A%2F%2Fstorage.googleapis.com%2Fplatform-webstore-rel-assets%2Fpgo%2Fsku_assets%2Fitem_event_ticket_07.png&w=96&q=75" alt="Item" width="50" height="50">
+                            <span class="item-count">1</span>
+                        </div>
+                        <div class="item-icon">
+                            <img src="https://store.pokemongolive.com/_next/image?url=https%3A%2F%2Fstorage.googleapis.com%2Fplatform-webstore-rel-assets%2Fpgo%2Fsku_assets%2Fitem_event_ticket_07.png&w=96&q=75" alt="Item" width="50" height="50">
+                            <span class="item-count">1</span>
+                        </div>
+                        <div class="item-icon">
+                            <img src="https://store.pokemongolive.com/_next/image?url=https%3A%2F%2Fstorage.googleapis.com%2Fplatform-webstore-rel-assets%2Fpgo%2Fsite_assets%2Fvirtual-currency.png&w=96&q=75" alt="Item" width="50" height="50">
+                            <span class="item-count">100</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="item-info">
+                    <h3 class="item-name">Power Up Ticket Ultra Ticket Box</h3>
+                    <p class="item-description">Can only be purchased 1 time.</p>
+                </div>
+                <div class="item-price">
+                    <button class="price-btn">₱289.00</button>
+                </div>
+            </div>
+            
+            <!-- Box 3 -->
+            <div class="item-card">
+                <div class="item-content">
+                    <div class="item-tag">LIMITED-TIME ONLY</div>
+                    <img src="https://store.pokemongolive.com/_next/image?url=https%3A%2F%2Fstorage.googleapis.com%2Fplatform-webstore-rel-assets%2Fpgo%2Fsku_assets%2Fbundle.general1.rocket.1.png&w=256&q=75" alt="Gift Box"width="100" height="102">
+                    <div class="item-icons">
+                        <div class="item-icon">
+                            <img src="https://store.pokemongolive.com/_next/image?url=https%3A%2F%2Fstorage.googleapis.com%2Fplatform-webstore-rel-assets%2Fpgo%2Fsku_assets%2Fitem_ultra_ball.png&w=96&q=75" alt="Item" width="50" height="50">
+                            <span class="item-count">7</span>
+                        </div>
+                        <div class="item-icon">
+                            <img src="https://store.pokemongolive.com/_next/image?url=https%3A%2F%2Fstorage.googleapis.com%2Fplatform-webstore-rel-assets%2Fpgo%2Fsku_assets%2Fitem_leader_map.png&w=96&q=75" alt="Item" width="50" height="50">
+                            <span class="item-count">7</span>
+                        </div>
+                        <div class="item-icon">
+                            <img src="https://store.pokemongolive.com/_next/image?url=https%3A%2F%2Fstorage.googleapis.com%2Fplatform-webstore-rel-assets%2Fpgo%2Fsku_assets%2Fitem_paid_raid_ticket.png&w=96&q=75" alt="Item" width="50" height="50">
+                            <span class="item-count">7</span>
+                        </div>
+                        <div class="item-icon">
+                            <img src="https://store.pokemongolive.com/_next/image?url=https%3A%2F%2Fstorage.googleapis.com%2Fplatform-webstore-rel-assets%2Fpgo%2Fsku_assets%2Fitem_golden_pinap_berry.png&w=96&q=75" alt="Item" width="50" height="50">
+                            <span class="item-count">7</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="item-info">
+                    <h3 class="item-name">GO Rocket Box</h3>
+                    <p class="item-description">Can only be purchased 1 time.</p>
+                </div>
+                <div class="item-price">
+                    <button class="price-btn">₱289.00</button>
+                </div>
+            </div>
+            
+            <!-- Box 4 -->
+            <div class="item-card">
+                <div class="item-content">
+                    <div class="item-tag">LIMITED-TIME ONLY</div>
+                    <img src="https://store.pokemongolive.com/_next/image?url=https%3A%2F%2Fstorage.googleapis.com%2Fplatform-webstore-stg-assets%2Fpgo%2Fsku_assets%2Fbundle.general.remotebox.small.1.png&w=256&q=75" alt="Gift Box"width="100" height="100">
+                    <div class="item-icons">
+                        <div class="item-icon">
+                            <img src="https://store.pokemongolive.com/_next/image?url=https%3A%2F%2Fstorage.googleapis.com%2Fplatform-webstore-rel-assets%2Fpgo%2Fsku_assets%2Fitem_remote_raid_ticket.png&w=96&q=75" alt="Item" width="50" height="50">
+                            <span class="item-count">3</span>
+                        </div>
+                        <div class="item-icon">
+                            <img src="https://store.pokemongolive.com/_next/image?url=https%3A%2F%2Fstorage.googleapis.com%2Fplatform-webstore-rel-assets%2Fpgo%2Fsku_assets%2Fitem_paid_raid_ticket.png&w=96&q=75" alt="Item" width="50" height="50">
+                            <span class="item-count">3</span>
+                        </div>
+                        <div class="item-icon">
+                            <img src="https://store.pokemongolive.com/_next/image?url=https%3A%2F%2Fstorage.googleapis.com%2Fplatform-webstore-rel-assets%2Fpgo%2Fsku_assets%2Fitem_incubator_basic.png&w=96&q=75" alt="Item" width="50" height="50">
+                            <span class="item-count">1</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="item-info">
+                    <h3 class="item-name">Ultra Raid Box</h3>
+                    <p class="item-description">Can only be purchased 3 times.</p>
+                </div>
+                <div class="item-price">
+                    <button class="price-btn">₱149.00</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="item-boxes">
+        <div class="item-boxes">
+            <!-- Box 1 -->
+            <div class="item-card">
+                <div class="timer-bar">17 HOURS LEFT</div>
+                <div class="item-content">
+                    <div class="item-tag">ONE TIME ONLY</div>
+                    <img src="https://store.pokemongolive.com/_next/image?url=https%3A%2F%2Fstorage.googleapis.com%2Fplatform-webstore-rel-assets%2Fpgo%2Fsku_assets%2Fbundle.general4.small.1.png&w=384&q=75" alt="Gift Box"width="100" height="200">
+                    <div class="item-icons">
+                        <div class="item-icon">
+                            <img src="https://store.pokemongolive.com/_next/image?url=https%3A%2F%2Fstorage.googleapis.com%2Fplatform-webstore-rel-assets%2Fpgo%2Fsku_assets%2Fitem_postcard_storage_upgrade.png&w=96&q=75" alt="Item" width="50" height="50">
+                            <span class="item-count">1</span>
+                        </div>
+                        <div class="item-icon">
+                            <img src="https://store.pokemongolive.com/_next/image?url=https%3A%2F%2Fstorage.googleapis.com%2Fplatform-webstore-rel-assets%2Fpgo%2Fsku_assets%2Fitem_remote_raid_ticket.png&w=96&q=75" alt="Item"width="50" height="50">
+                            <span class="item-count">2</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="item-info">
+                    <h3 class="item-name">Bug Out Ultra Ticket Box</h3>
+                    <p class="item-description">Can only be purchased 1 time.</p>
+                </div>
+                <div class="item-price">
+                    <button class="price-btn">₱59.00</button>
+                </div>
+            </div>
+            
+            <!-- Box 2 -->
+            <div class="item-card">
+                <div class="item-content">
+                    <div class="item-tag">ONE TIME ONLY</div>
+                    <img src="https://store.pokemongolive.com/_next/image?url=https%3A%2F%2Fstorage.googleapis.com%2Fplatform-webstore-rel-assets%2Fpgo%2Fsku_assets%2FIncubator_Super.png&w=384&q=75" alt="Gift Box"width="100" height="110">
+                    <div class="item-icons">
+                        <div class="item-icon">
+                            <img src="https://store.pokemongolive.com/_next/image?url=https%3A%2F%2Fstorage.googleapis.com%2Fplatform-webstore-rel-assets%2Fpgo%2Fsku_assets%2FIncubator_Super.png&w=384&q=75" alt="Item" width="20" height="30">
+                            <span class="item-count">1</span>
+                        </div>
+            
+                    </div>
+                </div>
+                <div class="item-info">
+                    <h3 class="item-name">Power Up Ticket Ultra Ticket Box</h3>
+                    <p class="item-description">Can only be purchased 1 time.</p>
+                </div>
+                <div class="item-price">
+                    <button class="price-btn">₱289.00</button>
+                </div>
+            </div>
+            
+            <!-- Box 3 -->
+            <div class="item-card">
+                <div class="item-content">
+                    <div class="item-tag">LIMITED-TIME ONLY</div>
+                    <img src="https://store.pokemongolive.com/_next/image?url=https%3A%2F%2Fstorage.googleapis.com%2Fplatform-webstore-rel-assets%2Fpgo%2Fsku_assets%2Fitem_incubator_basic.png&w=384&q=75" alt="Gift Box"width="100" height="300">
+                </div>
+                <div class="item-info">
+                    <h3 class="item-name">GO Rocket Box</h3>
+                    <p class="item-description">Can only be purchased 1 time.</p>
+                </div>
+                <div class="item-price">
+                    <button class="price-btn">₱289.00</button>
+                </div>
+            </div>
+            
+            <!-- Box 4 -->
+            <div class="item-card">
+                <div class="item-content">
+                    <div class="item-tag">LIMITED-TIME ONLY</div>
+                    <img src="https://store.pokemongolive.com/_next/image?url=https%3A%2F%2Fstorage.googleapis.com%2Fplatform-webstore-rel-assets%2Fpgo%2Fsku_assets%2Fitem_max_revive.png&w=256&q=75" alt="Gift Box"width="100" height="100">
+                    <div class="item-icons">
+                        <div class="item-icon">
+                            <img src="https://store.pokemongolive.com/_next/image?url=https%3A%2F%2Fstorage.googleapis.com%2Fplatform-webstore-rel-assets%2Fpgo%2Fsku_assets%2Fitem_max_revive.png&w=256&q=75" alt="Item" width="60" height="60">
+                            <span class="item-count">1</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="item-info">
+                    <h3 class="item-name">Ultra Raid Box</h3>
+                    <p class="item-description">Can only be purchased 3 times.</p>
+                </div>
+                <div class="item-price">
+                    <button class="price-btn">₱149.00</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="item-boxes">
+        <div class="item-boxes">
+            <!-- Box 1 -->
+            <div class="item-card">
+                <div class="timer-bar">17 HOURS LEFT</div>
+                <div class="item-content">
+                    <div class="item-tag">ONE TIME ONLY</div>
+                    <img src="https://store.pokemongolive.com/_next/image?url=https%3A%2F%2Fstorage.googleapis.com%2Fplatform-webstore-rel-assets%2Fpgo%2Fsku_assets%2Fitem_paid_raid_ticket.png&w=256&q=75" alt="Gift Box"width="100" height="100">
+                    <div class="item-icons">
+                        <div class="item-icon">
+                            <img src="https://store.pokemongolive.com/_next/image?url=https%3A%2F%2Fstorage.googleapis.com%2Fplatform-webstore-rel-assets%2Fpgo%2Fsku_assets%2Fitem_paid_raid_ticket.png&w=256&q=75" alt="Item" width="50" height="50">
+                            <span class="item-count">3</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="item-info">
+                    <h3 class="item-name">Bug Out Ultra Ticket Box</h3>
+                    <p class="item-description">Can only be purchased 1 time.</p>
+                </div>
+                <div class="item-price">
+                    <button class="price-btn">₱59.00</button>
+                </div>
+            </div>
+            
+            <!-- Box 2 -->
+            <div class="item-card">
+                <div class="item-content">
+                    <div class="item-tag">ONE TIME ONLY</div>
+                    <img src="https://store.pokemongolive.com/_next/image?url=https%3A%2F%2Fstorage.googleapis.com%2Fplatform-webstore-rel-assets%2Fpgo%2Fsku_assets%2Fitem_mp_replenish.png&w=256&q=75" alt="Gift Box"width="100" height="100">
+                    <div class="item-icons">
+                        <div class="item-icon">
+                            <img src="https://store.pokemongolive.com/_next/image?url=https%3A%2F%2Fstorage.googleapis.com%2Fplatform-webstore-rel-assets%2Fpgo%2Fsku_assets%2Fitem_mp_replenish.png&w=256&q=75" alt="Item" width="70" height="50">
+                            <span class="item-count">3</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="item-info">
+                    <h3 class="item-name">Power Up Ticket Ultra Ticket Box</h3>
+                    <p class="item-description">Can only be purchased 1 time.</p>
+                </div>
+                <div class="item-price">
+                    <button class="price-btn">₱289.00</button>
+                </div>
+            </div>
+            
+            <!-- Box 3 -->
+            <div class="item-card">
+                <div class="item-content">
+                    <div class="item-tag">LIMITED-TIME ONLY</div>
+                    <img src="https://store.pokemongolive.com/_next/image?url=https%3A%2F%2Fstorage.googleapis.com%2Fplatform-webstore-rel-assets%2Fpgo%2Fsku_assets%2Fitem_max_boost.png&w=256&q=75" alt="Gift Box"width="100" height="150">
+                    <div class="item-icons">
+                        <div class="item-icon">
+                            <img src="https://store.pokemongolive.com/_next/image?url=https%3A%2F%2Fstorage.googleapis.com%2Fplatform-webstore-rel-assets%2Fpgo%2Fsku_assets%2Fitem_max_boost.png&w=256&q=75" alt="Item" width="50" height="0">
+                            <span class="item-count">7</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="item-info">
+                    <h3 class="item-name">GO Rocket Box</h3>
+                    <p class="item-description">Can only be purchased 1 time.</p>
+                </div>
+                <div class="item-price">
+                    <button class="price-btn">₱289.00</button>
+                </div>
+            </div>
+        </section>
+    <!-- PokéCoins Section -->
+    <section id="pokecoins">
+        <h2 class="section-title">PokéCoins</h2>
+        <div class="item-boxes">
+            <!-- PokéCoin Option 1 -->
+            <div class="item-card">
+                <div class="item-content" style="justify-content: center; height: 200px;">
+                    <img src="https://store.pokemongolive.com/_next/image?url=https%3A%2F%2Fstorage.googleapis.com%2Fplatform-webstore-rel-assets%2Fpgo%2Fsku_assets%2Fcoin-bundle-xxsmall.png&w=384&q=75" alt="100 PokéCoins"width="150" height="150">
+                </div>
+                <div class="item-info">
+                    <h3 class="item-name">100 PokéCoins</h3>
+                    <p class="item-description">10 Web Store bonus coin.</p>
+                </div>
+                <div class="item-price">
+                    <button class="price-btn">₱29.00</button>
+                </div>
+            </div>
+            
+            <!-- PokéCoin Option 2 -->
+            <div class="item-card">
+                <div class="item-content" style="justify-content: center; height: 200px;">
+                    <img src="https://store.pokemongolive.com/_next/image?url=https%3A%2F%2Fstorage.googleapis.com%2Fplatform-webstore-rel-assets%2Fpgo%2Fsku_assets%2Fcoin-bundle-xsmall.png&w=384&q=75" alt="550 PokéCoins"width="150" height="150">
+                </div>
+                <div class="item-info">
+                    <h3 class="item-name">600 PokéCoins</h3>
+                    <p class="item-description">50 Web Store bonus coin.</p>
+                </div>
+                <div class="item-price">
+                    <button class="price-btn">₱149.00</button>
+                </div>
+            </div>
+            
+            <!-- PokéCoin Option 3 -->
+            <div class="item-card">
+                <div class="item-content" style="justify-content: center; height: 200px;">
+                    <img src="https://store.pokemongolive.com/_next/image?url=https%3A%2F%2Fstorage.googleapis.com%2Fplatform-webstore-rel-assets%2Fpgo%2Fsku_assets%2Fcoin-bundle-small_v2.png&w=384&q=75" alt="1200 PokéCoins"width="150" height="150">
+                </div>
+                <div class="item-info">
+                    <h3 class="item-name">1300 PokéCoins</h3>
+                    <p class="item-description">100 Web Store bonus coin.</p>
+                </div>
+                <div class="item-price">
+                    <button class="price-btn">₱289.00</button>
+                </div>
+            </div>
+            
+            <!-- PokéCoin Option 4 -->
+            <div class="item-card">
+                <div class="item-content" style="justify-content: center; height: 200px;">
+                    <img src="https://store.pokemongolive.com/_next/image?url=https%3A%2F%2Fstorage.googleapis.com%2Fplatform-webstore-rel-assets%2Fpgo%2Fsku_assets%2Fcoin-bundle-medium_v2.png&w=384&q=75" alt="1000 PokéCoins"width="150" height="150">
+                </div>
+                <div class="item-info">
+                    <h3 class="item-name">2700 PokéCoins</h3>
+                    <p class="item-description">200 Web Store bonus coin.</p>
+                </div>
+                <div class="item-price">
+                    <button class="price-btn">₱579.00</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="pokecoins">
+        <div class="item-boxes">
+            <!-- PokéCoin Option 1 -->
+            <div class="item-card">
+                <div class="item-content" style="justify-content: center; height: 200px;">
+                    <img src="https://store.pokemongolive.com/_next/image?url=https%3A%2F%2Fstorage.googleapis.com%2Fplatform-webstore-rel-assets%2Fpgo%2Fsku_assets%2Fcoin-bundle-large-v2.png&w=384&q=75" alt="100 PokéCoins"width="150" height="150">
+                </div>
+                <div class="item-info">
+                    <h3 class="item-name">5,600 PokéCoins</h3>
+                    <p class="item-description">400 Web Store bonus coin.</p>
+                </div>
+                <div class="item-price">
+                    <button class="price-btn">₱1,170.00</button>
+                </div>
+            </div>
+            
+            <!-- PokéCoin Option 2 -->
+            <div class="item-card">
+                <div class="item-content" style="justify-content: center; height: 200px;">
+                    <img src="https://store.pokemongolive.com/_next/image?url=https%3A%2F%2Fstorage.googleapis.com%2Fplatform-webstore-rel-assets%2Fpgo%2Fsku_assets%2Fcoin-bundle-xlarge.png&w=384&q=75" alt="550 PokéCoins"width="150" height="150">
+                </div>
+                <div class="item-info">
+                    <h3 class="item-name">15,500 PokéCoins</h3>
+                    <p class="item-description">1,000 Web Store bonus coin.</p>
+                </div>
+                <div class="item-price">
+                    <button class="price-btn">₱2,950.00</button>
+                </div>
+            </div>
+            </section>
+    
+    <!-- Daily Bundles Section -->
+    <section id="daily-bundles">
+        <h2 class="section-title">Daily Bundles</h2>
+        <div class="bundle-card">
+        <div class="mystery-box">
+            <div class="mystery-icons">
+                <img src="https://store.pokemongolive.com/_next/image?url=https%3A%2F%2Fstorage.googleapis.com%2Fplatform-webstore-rel-assets%2Fpgo%2Fsku_assets%2Fml_default_sku_id.png&w=384&q=75" alt="Mystery" class="mystery-icon">
+            </div></div>
+            <div class="item-info">
+            <div class="item-description">
+            <h3>Mystery Boxes</h3>
+            <p>3 Daily Bundles</p>
+            <button class="sign-in-btn" style="margin-top: 20px;">Sign in to view</button>
+        </div></div></div>
+    </section>
+    
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="https://store.pokemongolive.com/_next/image?url=https%3A%2F%2Fstorage.googleapis.com%2Fplatform-webstore-rel-assets%2Fpgo%2Fsite_assets%2Fniantic-logo.png&w=128&q=75" alt="Pokémon GO Logo" style="filter: brightness(0) invert(1);">
+                <span style="margin-left: 10px; font-size: 1.0rem;">POKEMON COMPANY</span>
+            </div>
+            
+            <div class="footer-links">
+                <div class="footer-column">
+                    <h4>About</h4>
+                    <ul>
+                        <li><a href="#">Our Story</a></li>
+                        <li><a href="#">News</a></li>
+                        <li><a href="#">Careers</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Community</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Cookies</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© For educational purposes only and no copyright infringement is intended.</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
