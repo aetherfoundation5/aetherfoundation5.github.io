@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Profile - Pokémon GO Webstore</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="secondary-nav">
+        <a id="home-link" href="index.html">Home</a>
+        <a id="store-link" href="store.html">Store</a>
+        <a id="profile-link" href="profile.html" class="active">Profile</a>
+        <a id="history-link" href="transaction-history.html">Transaction History</a>
+    </nav>
+
+    <div class="profile-container">
+        <h2>Profile</h2>
+        <div class="profile-info">
+            <p><strong>Player ID:</strong> IT_VASQUEZ</p>
+            <p><strong>IGN:</strong> <span id="ign">TrainerV</span></p>
+            <p><strong>Email:</strong> <span id="email">trainer@example.com</span></p>
+            <button onclick="editProfile()">Edit Profile</button>
+        </div>
+    </div>
+
+    <script src="profile.js"></script>
+</body>
+</html>
