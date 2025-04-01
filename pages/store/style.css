@@ -339,7 +339,6 @@ header .profile-link img {
     display: flex;
     justify-content: center;
     position: absolute;
-    margin-bottom:50px;
     bottom: 20px;
     width: 100%;
     left: 0;
@@ -349,6 +348,7 @@ header .profile-link img {
     width: 10px;
     height: 10px;
     margin: 0 5px;
+    margin-bottom:50px;
     background-color: gray;
     border-radius: 50%;
     cursor: pointer;
