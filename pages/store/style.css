@@ -342,6 +342,7 @@ header .profile-link img {
     bottom: 20px;
     width: 100%;
     left: 0;
+    transform: translateY(200px);
 }
 
 .dot {
