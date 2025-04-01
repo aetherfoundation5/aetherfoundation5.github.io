@@ -348,8 +348,6 @@ header .profile-link img {
     width: 10px;
     height: 10px;
     margin: 0 5px;
-    position: relative;  /* Add relative positioning */
-    top: 200px;  /* Moves it 200px down */
     background-color: gray;
     border-radius: 50%;
     cursor: pointer;
