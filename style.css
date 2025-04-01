@@ -42,6 +42,12 @@ header .logo img {
     max-height: 40px;
 }
 
+header .group-name {
+    font-size: 18px;
+    color: #000000;
+    margin-left: 10px;
+}
+
 header .nav-links {
     display: flex;
     gap: 30px;

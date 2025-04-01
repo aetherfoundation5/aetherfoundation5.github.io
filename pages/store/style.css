@@ -55,6 +55,12 @@ header .logo img {
     max-height: 40px;
 }
 
+header .group-name {
+    font-size: 18px;
+    color: #000000;
+    margin-left: 10px;
+}
+
 header .nav-links {
     display: flex;
     gap: 30px;
@@ -535,6 +541,25 @@ footer {
     margin-top: 40px;
 }
 
+ .footer-copyright{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: linear-gradient(to right, #fdebba, #ffffff);
+    color: #000000;
+    padding: 10px 0;
+    text-align: center;
+    z-index: 100;
+}
+
+footer p {
+    margin: 0;
+    font-size: 12px;
+    font-weight: 300;
+    letter-spacing: 0.5px;
+}
+
 .footer-content {
     display: flex;
     flex-wrap: wrap;
@@ -578,12 +603,15 @@ footer {
 }
 
 .footer-bottom {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: linear-gradient(to right, #fdebba, #ffffff);
+    color: #000000;
+    padding: 10px 0;
     text-align: center;
-    margin-top: 40px;
-    padding-top: 20px;
-    border-top: 1px solid #555;
-    color: #aaa;
-    font-size: 14px;
+    z-index: 100;
 }
 
 /* Popup Modal */
