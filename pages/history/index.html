@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Profile Page</title>
+    <title>Transaction History</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -24,26 +24,30 @@
             <a href="">Leaderboard</a>
         </div>
         <a href="../profile/index.html" class="profile-link">
-            <img src="./prof-pic.jpg" alt="Profile">
+            <img src="../profile/prof-pic.jpg" alt="Profile">
             <span>Profile</span>
         </a>
     </nav>
 </header>
 
 <main>
-    <section class="profile-container">
-        <div class="profile-card">
-            <img src="./prof-pic.jpg" alt="Profile Picture">
-            <h1>Khurt Vasquez</h1>
-            <p>Email: KhurtVasquez@gmail.com</p>
-            <p>Phone:  +63 9072095268</p>
-            <p>Member Since: January 2020</p>
-
-            <div class="buttons">
-                <button id="toggle-transactions" class="btn">Transaction History</button>
-                <a href="" class="btn logout">Logout</a>
-            </div>
+    <section class="transaction-container">
+        <h1>Transaction History</h1>
+        <div class="table-wrapper">
+            <table class="transaction-table">
+                <thead>
+                    <tr>
+                        <th>Item</th>
+                        <th>Quantity</th>
+                        <th>Price</th>
+                        <th>Total</th>
+                        <th>Date</th>
+                    </tr>
+                </thead>
+                <tbody id="transaction-history-list"></tbody>
+            </table>
         </div>
+    </section>
 </main>
 
 <footer>
